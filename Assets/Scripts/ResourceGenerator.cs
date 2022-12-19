@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class ResourceGenerator : MonoBehaviour
 {
-
-
     public float foodPerSecond = 10f;
     public float waterPerSecond = 10f;
     public float heatPerSecond = 10f;
@@ -22,7 +20,7 @@ public class ResourceGenerator : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.CompareTag("Agent"))
         {

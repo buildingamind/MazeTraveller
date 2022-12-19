@@ -14,6 +14,11 @@ public class AgentBehavior : Agent
 
     [ReadOnly]
     public float lifetime;
+
+    [Header("How much energy does an action take?")]
+    [Tooltip("We will decrement either the reward or the hunger/water with this value.")]
+    public float metabolicCost = 0f; 
+
     [ReadOnly]
     public float hungerValue = 100f;
     public float hungerDrainPerSecond = 0.1f;
@@ -73,7 +78,7 @@ public class AgentBehavior : Agent
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void FixedUpdate()  // We often use FixedUpdate because this is when the Agents perform actions -- not on update.
     {
         motionVector = transform.position - lastMotionVector;
         lastMotionVector = transform.position;
@@ -89,6 +94,10 @@ public class AgentBehavior : Agent
         hungerValue -= Time.deltaTime * hungerDrainPerSecond;
         waterValue -= Time.deltaTime * waterDrainPerSecond;
         heatValue -= Time.deltaTime * heatDrainPerSecond;
+
+        hungerValue = Mathf.Clamp(hungerValue, 0, 100);
+        waterValue = Mathf.Clamp(waterValue, 0, 100);
+        heatValue = Mathf.Clamp(heatValue, 0, 100);
     }
 
     public override void CollectObservations(VectorSensor sensor)

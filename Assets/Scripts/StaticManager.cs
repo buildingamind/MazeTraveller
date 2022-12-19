@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class StaticManager : object
+public class StaticManager : MonoBehaviour
 {
     public static List<GameObject> agents;
     public static List<AgentBehavior> agentBehaviors;
