@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 49f8fd88c13b33040ab076d3417f3ac6
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - targetObserver: {instanceID: 0}
+  - screen: {instanceID: 0}
+  - leftEdge: {instanceID: 0}
+  - rightEdge: {instanceID: 0}
+  - topEdge: {instanceID: 0}
+  - bottomEdge: {instanceID: 0}
+  - center: {instanceID: 0}
+  - unlit: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  - cam: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

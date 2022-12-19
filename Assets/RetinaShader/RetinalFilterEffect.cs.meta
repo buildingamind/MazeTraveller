@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 489f9fc902a26ce47b2c12003cc2a9ca
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - colorShaderMat: {fileID: 2100000, guid: c0a5db4a768d0f6409ede8bcd9882f9e, type: 2}
+  - grayscaleShaderMat: {fileID: 2100000, guid: 138cf188aa835a44a88fe53d9595d29c, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
